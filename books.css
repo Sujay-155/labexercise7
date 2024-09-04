@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  
+}
+
+/* Button Styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #252925;
+}
+
+/* Input and Select Styles */
+input[type="text"],
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+select {
+  margin-left: 10px;
+}
+
+/* Books Container Styles */
+#books-container {
+  display: grid;
+  align-items: center;
+  align-self: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 20px;
+}
+
+#books-container div {
+  background-color: white;
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Image Styles */
+#books-container img {
+  border-radius: 6px;
+  margin-bottom: 9px;
+
+}
+
+/* Title Styles */
+#books-container div div:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description Styles */
+#books-container div div:last-child {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Pagination Styles */
+#pagination-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pagination-container button {
+  background-color: #0394c4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#pagination-container button:hover {
+  background-color: #007B9A;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #books-container {
+      grid-template-columns: 1fr;
+  }
+}
